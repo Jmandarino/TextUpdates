@@ -55,12 +55,11 @@ if __name__ == "__main__":
 
     conditions.weather_lookup()
 
-    print(conditions.temp_f)
-
 
     print(account_sid, auth_token, twilio_number)
     if proxy:
         print(proxy)
+
 
     print(proxy)
 
