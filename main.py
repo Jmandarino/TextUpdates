@@ -6,11 +6,14 @@ from twilio.rest.resources.connection import PROXY_TYPE_SOCKS4
 from twilio.rest.resources.connection import PROXY_TYPE_HTTP
 import json
 import os
+#custom python files
+import weather
 
 account_sid  = None
 auth_token = None
 twilio_number = None
 proxy = False
+weather_api_key = None
 
 def str_to_bool(s):
     if s == "True" or s == "true":
@@ -30,6 +33,10 @@ def get_settings():
         global proxy
         proxy = str_to_bool(data["proxy"])
 
+    if data["weather_api_key"]:
+        global weather_api_key
+        weather_api_key = data["weather_api_key"]
+
     if data['account_sid'] and data['auth_token'] and data['twilio_number']:
         global account_sid
         global auth_token
@@ -44,11 +51,21 @@ def get_settings():
 if __name__ == "__main__":
     get_settings()
 
+    conditions = weather.Weather(weather_api_key, "11756")
+
+    conditions.weather_lookup()
+
+    print(conditions.temp_f)
+
+
     print(account_sid, auth_token, twilio_number)
     if proxy:
         print(proxy)
 
     print(proxy)
+
+    # this works just not on a proxy
+    exit()
     client = TwilioRestClient(account_sid, auth_token)
     message = client.messages.create(to="+15166528691",from_=twilio_number, body="test")
 
