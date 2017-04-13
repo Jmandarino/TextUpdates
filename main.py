@@ -41,10 +41,6 @@ def get_settings():
         Exception("Missing Arguments in 'account.json,' please include account_sid, auth_token, and twilio_number")
 
 
-
-
-
-
 if __name__ == "__main__":
     get_settings()
 
