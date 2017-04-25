@@ -18,7 +18,7 @@ You must create your own twilio account, weather underground API key and LIRR da
 
 ## How to run
 
-#### Using the set up file:
+#### Using the setup.py file:
 
 run the set up file to quickly set up the "accounts.json" that is used to store your account information. Below is an example of the file:
 

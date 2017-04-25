@@ -19,7 +19,7 @@ if os.path.isfile("account.json"):
 
     option = input()
 
-    if option.lower() == "y":
+    if option.strip().lower() == "y":
         # erases file
         outfile = open(outfilepath, 'w')
     else:
@@ -27,5 +27,16 @@ if os.path.isfile("account.json"):
         exit()
 
 
+print("The following can be found at: https://www.twilio.com/console")
+print("Please enter your Twillio account sid:")
 
+sid = input()
+
+print("Please enter your Twilio AUTH Token:")
+
+twilio_autho = input()
+
+print("Please enter your Twillio Phone number found here (https://www.twilio.com/console/phone-numbers/incoming):")
+
+twilio_num = input()
 
