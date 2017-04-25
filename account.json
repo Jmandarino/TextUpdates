@@ -3,5 +3,6 @@
   "auth_token":"a9d5b3fbf0d5e31901011c2bf4b77c17",
   "twilio_number":"+15162899385",
   "proxy":"True",
-  "weather_api_key":"472eafe44023bd3b"
+  "weather_api_key":"472eafe44023bd3b",
+  "zipcode":"11756"
 }
