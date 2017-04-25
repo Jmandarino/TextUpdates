@@ -12,10 +12,10 @@ This program makes use of Twilio, Weather Underground API, and the LIRR API in o
 You must create your own twilio account, weather underground API key and LIRR datamine API key. Please note that you must verify the phone number you are sending texts to if you are using a
 Twilio trial account!
 
- Accounts can be created here:
-    * <https://www.twilio.com/try-twilio>
-    * <https://www.wunderground.com/weather/api/>
-    * <http://datamine.mta.info/user/register>
+Accounts can be created here:
+* <https://www.twilio.com/try-twilio>
+* <https://www.wunderground.com/weather/api/>
+* <http://datamine.mta.info/user/register>
 
 ## How to run
 
