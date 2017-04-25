@@ -9,7 +9,8 @@ This program makes use of Twilio, Weather Underground API, and the LIRR API in o
 
 ## What is needed:
 
-You must create your own twilio account, weather underground API key and LIRR datamine API key.
+You must create your own twilio account, weather underground API key and LIRR datamine API key. Please note that you must verify the phone number you are sending texts to if you are using a
+Twilio trial account!
 
  Accounts can be created here:
     * <https://www.twilio.com/try-twilio>
@@ -29,8 +30,17 @@ run the set up file to quickly set up the "accounts.json" that is used to store 
   "twilio_number":"+",
   "proxy":"",
   "weather_api_key":"",
-  "zipcode":""
+  "zipcode":"",
+  "to_phone_number": ""
 }
 ```
+
+
+# TODO:
+
+* finish setup.py functionality
+* get LIRR API Access
+* clean up code for main.py
+* finish LIRR.py
 
 
